@@ -1,0 +1,27 @@
+/*
+	**pressTime is how long you press the button for to run/stop the script
+	**Pressing the button while the script is running will stop the script
+*/
+
+int pressTime = 200;
+
+main 
+{
+	if(get_val(XB1_UP))
+	{
+		if(get_ptime(XB1_UP) > pressTime)
+		{
+			combo_run(spins);
+			combo_run(spins);
+		}
+		else combo_stop_all();
+	}
+}
+combo spins
+{
+
+}
+
+combo shot {
+
+}
